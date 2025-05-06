@@ -22,10 +22,6 @@ main_window.blit(back_image, (0, 0)) # фон програми (background image
 pygame.display.set_caption("Click faster")          # назва програми (title)
 clock = pygame.time.Clock()
 
-transparent_surface = pygame.Surface((WIDTH, HEIGHT), pygame.SRCALPHA)
-transparent_surface.fill((255, 255, 255, 0))  # Білий колір із прозорістю
-main_window.blit(transparent_surface, (0, 0))
-
 # Клас для створення прямокутника 
 class Area():
     def __init__(self, x = 0, y = 0, width = 10, height = 10, color = None):
